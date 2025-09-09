@@ -575,6 +575,10 @@ body.dark .history__item:hover {
     height: 85px;
   }
 
+  .history__list {
+    font-size: 20px;
+  }
+
   .history__item {
     font-size: 22px;
   }
@@ -679,6 +683,10 @@ body.dark .history__item:hover {
     height: 45px;
   }
 
+  .history__list {
+    font-size: 18px;
+  }
+
   .history__item {
     font-size: 18px;
   }
@@ -739,5 +747,9 @@ body.dark .history__item:hover {
   .history {
     margin-top: 130px;
     height: 82%;
+  }
+
+  .history__list {
+    font-size: 16px;
   }
 }
