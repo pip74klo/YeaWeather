@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yea Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__inner">
+          <div class="logo">
+            <img class="logo__img" src="assets/logo.svg" alt="" />
+            <a class="logo__title" href="#">
+              <span>Yea Weather</span>
+            </a>
+            <span class="logo__time">01:35 pm</span>
+          </div>
+          <nav class="nav">
+            <div class="toggle">
+              <span class="toggle__before">°C</span>
+              <label class="toggle__label" for="toggle">
+                <div class="toggle__switch">
+                  <div class="toggle__circle"></div>
+                </div>
+              </label>
+              <input type="checkbox" class="toggle__input" id="toggle" />
+              <span class="toggle__after">°F</span>
+            </div>
+            <button class="nav__history-btn btn">История городов</button>
+            <button class="theme__icon">
+              <img class="light" src="assets/sunny.svg" alt="" />
+              <img class="night" src="assets/night.svg" alt="" />
+            </button>
+          </nav>
+        </div>
+        <div class="history">
+          <ul class="history__list"></ul>
+        </div>
+
+        <div class="search-box">
+          <form class="search__form">
+            <!-- <div class="search__form-block"> -->
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Поиск локации..."
+            />
+            <button type="submit" class="form__btn btn">OK</button>
+            <!-- </div> -->
+          </form>
+        </div>
+        <div class="location__info"></div>
+
+        <div class="weather-box">
+          <div class="loading hidden">
+            <img class="loading__img" src="assets/loading.gif" alt="" />
+          </div>
+          <div class="weather weather__start-message">
+            <p>Введите название города, чтобы узнать погоду на сегодня.</p>
+            <p>История сохраняет последние 5 городов</p>
+            <p>
+              Вы можете переключать температуру между °C и °F, а также выбрать
+              светлую или тёмную тему.
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
