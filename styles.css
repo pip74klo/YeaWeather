@@ -678,6 +678,10 @@ body.dark .history__item:hover {
     padding-left: 0;
   }
 
+  .weather-metric__info {
+    text-align: center;
+  }
+
   .weather-metric__icon img {
     width: 45px;
     height: 45px;
